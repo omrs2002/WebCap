@@ -54,9 +54,9 @@ namespace WebCap.Api.Controllers
         [Route("ReceiveMessage")]
         [HttpPost]
         [CapSubscribe("test.show.time")]
-        public void ReceiveMessage(DateTime time)
+        public void ReceiveMessage()
         {
-            Console.WriteLine("message time is:" + time);
+            Console.WriteLine("message time is:" + DateTime.Now);
         }
     }
 }
